@@ -1,0 +1,193 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\City\City_1.png" />
+    <None Remove="Assets\City\Street.png" />
+    <None Remove="Assets\Enemy\Enemie_1.png" />
+    <None Remove="Assets\Enemy\Enemie_2.png" />
+    <None Remove="Assets\Enemy\Enemie_3.png" />
+    <None Remove="Assets\Enemy\Enemy_1.png" />
+    <None Remove="Assets\Enemy\Enemy_2_1.png" />
+    <None Remove="Assets\Enemy\Enemy_2_10.png" />
+    <None Remove="Assets\Enemy\Enemy_2_11.png" />
+    <None Remove="Assets\Enemy\Enemy_2_12.png" />
+    <None Remove="Assets\Enemy\Enemy_2_2.png" />
+    <None Remove="Assets\Enemy\Enemy_2_3.png" />
+    <None Remove="Assets\Enemy\Enemy_2_4.png" />
+    <None Remove="Assets\Enemy\Enemy_2_5.png" />
+    <None Remove="Assets\Enemy\Enemy_2_6.png" />
+    <None Remove="Assets\Enemy\Enemy_2_7.png" />
+    <None Remove="Assets\Enemy\Enemy_2_8.png" />
+    <None Remove="Assets\Enemy\Enemy_2_9.png" />
+    <None Remove="Assets\Enemy\Enemy_3.png" />
+    <None Remove="Assets\Rocko\Death.png" />
+    <None Remove="Assets\Rocko\Death_0.png" />
+    <None Remove="Assets\Rocko\Death_1.png" />
+    <None Remove="Assets\Rocko\Death_2.png" />
+    <None Remove="Assets\Rocko\Death_3.png" />
+    <None Remove="Assets\Rocko\Death_4.png" />
+    <None Remove="Assets\Rocko\Death_5.png" />
+    <None Remove="Assets\Rocko\Rocko_1.png" />
+    <None Remove="Assets\Rocko\Rocko_10.png" />
+    <None Remove="Assets\Rocko\Rocko_11.png" />
+    <None Remove="Assets\Rocko\Rocko_2.png" />
+    <None Remove="Assets\Rocko\Rocko_3.png" />
+    <None Remove="Assets\Rocko\Rocko_4.png" />
+    <None Remove="Assets\Rocko\Rocko_5.png" />
+    <None Remove="Assets\Rocko\Rocko_6.png" />
+    <None Remove="Assets\Rocko\Rocko_7.png" />
+    <None Remove="Assets\Rocko\Rocko_8.png" />
+    <None Remove="Assets\Rocko\Rocko_9.png" />
+    <None Remove="Assets\Rocko\Rocko_Jump.png" />
+    <None Remove="Assets\Rocko\Rocko_Jump_2.png" />
+    <None Remove="Assets\Rocko\Rocko_Slide.png" />
+    <None Remove="Assets\Start\Instructions_Menu.png" />
+    <None Remove="Assets\Start\Rocko_Icono.png" />
+    <None Remove="Assets\Start\Screen_1.png" />
+    <None Remove="Assets\Start\Screen_2.png" />
+    <None Remove="Assets\Start\Start_Menu.png" />
+    <None Remove="Back.png" />
+    <None Remove="Exit.png" />
+    <None Remove="HowToPlay.png" />
+    <None Remove="Restart.png" />
+    <None Remove="Rocko_Icono.png" />
+    <None Remove="Screen_1.png" />
+    <None Remove="Start.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\City\City_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\City\Street.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemie_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemie_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemie_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_10.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_11.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_12.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_5.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_6.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_7.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_8.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_2_9.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Enemy\Enemy_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Death_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_10.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_11.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_4.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_5.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_6.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_7.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_8.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_9.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_Jump.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_Jump_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_Slide.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Instructions_Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Rocko_Icono.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Screen_1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Screen_2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Start_Menu.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Back.png" />
+    <Resource Include="Exit.png" />
+    <Resource Include="HowToPlay.png" />
+    <Resource Include="Restart.png" />
+    <Resource Include="Rocko_Icono.png" />
+    <Resource Include="Screen_1.png" />
+    <Resource Include="Start.png" />
+  </ItemGroup>
+
+</Project>

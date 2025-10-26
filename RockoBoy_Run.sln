@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockoBoy_Run", "RockoBoy_Run.csproj", "{75D269FC-8210-4D42-A0A8-62F980AAAF2C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup_RockoBoyRun", "..\Setup_RockoBoyRun\Setup_RockoBoyRun.vdproj", "{A5FA94EE-B396-3913-9327-AB57F1FCD654}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75D269FC-8210-4D42-A0A8-62F980AAAF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75D269FC-8210-4D42-A0A8-62F980AAAF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75D269FC-8210-4D42-A0A8-62F980AAAF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75D269FC-8210-4D42-A0A8-62F980AAAF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FA94EE-B396-3913-9327-AB57F1FCD654}.Debug|Any CPU.ActiveCfg = Debug
+		{A5FA94EE-B396-3913-9327-AB57F1FCD654}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23A49DA7-4BE9-45C5-A3A1-CCB8D9D6D05C}
+	EndGlobalSection
+EndGlobal
