@@ -1,0 +1,26 @@
+﻿<Window x:Class="RockoBoy_Run.YourRecord"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockoBoy_Run"
+        mc:Ignorable="d"
+        Title="RockoBoy_Run" Height="245" Width="400" Icon="/Rocko_Icono.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas>
+        <Image Name="highScoreMenu" Source="Assets/Start/Record_Menu2.png" Height="250" Width="400"  Canvas.Top="-10" Canvas.Left="-1"/>
+        <Label Name="lbl_NewRecord" Content="New Record!" FontWeight="Normal" FontFamily="Retro Gaming" FontSize="28" Canvas.Top="5" Canvas.Left="95" Foreground="Gold"/>
+        <Label Name="lbl_ScoreTime" Content="00:00:00" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="28" Canvas.Top="45" Canvas.Left="120" Foreground="RoyalBlue" />
+        <Label Name="lbl_EnterName" Content="Enter your Name" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="24" Canvas.Top="85" Canvas.Left="70" Foreground="Black" />
+        <TextBox Name="txt_Name" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="24" Width="235" Height="35" Canvas.Top="130" Canvas.Left="82" Opacity="0.5" Foreground="Black" />
+        <Button Name="btn_Ok" Height="25" Width="90" Canvas.Top="175" Canvas.Left="230" Click="btn_Ok_Click" BorderBrush="{x:Null}" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Start/Back.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="btn_Save" Height="25" Width="90" Canvas.Top="175" Canvas.Left="80" Click="btn_Save_Click" BorderBrush="{x:Null}" Cursor="ArrowCD" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Start/Save.png"/>
+            </Button.Background>
+        </Button>
+    </Canvas>
+</Window>

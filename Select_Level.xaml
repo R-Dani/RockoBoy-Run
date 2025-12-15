@@ -1,0 +1,25 @@
+﻿<Window x:Class="RockoBoy_Run.Select_Level"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockoBoy_Run"
+        mc:Ignorable="d"
+        Title="RockoBoy_LvlSelection" Height="213" Width="389" Icon="/Assets/Start/Rocko_Icono.png" Background="#FF81A5CC" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas>
+        <Rectangle x:Name="rect1" Width="179" Height="64" Canvas.Top="20" Canvas.Left="157" Fill="Black" />
+        <Button Name="btn_Normal" FontSize="30" Foreground="Lime" FontFamily="Retro Gaming" Content="Normal" Height="64" Width="179" Canvas.Top="20" Canvas.Left="157" Click="btn_Normal_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Start/Rocko_Icono.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Rectangle x:Name="rect2" Width="179" Height="64" Canvas.Top="89" Canvas.Left="157" Fill="Black" />
+        <Button Name="btn_Dificil" FontSize="30" Foreground="Lime" FontFamily="Retro Gaming" Content="Hard" Height="64" Width="179" Canvas.Top="89" Canvas.Left="157" Click="btn_Dificil_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Start/Rocko_Icono.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Image Name="rocko" Source="Assets/Rocko/Rocko_1.png" Height="135" Width="123" Canvas.Top="19" Canvas.Left="10"/>
+        
+    </Canvas>
+</Window>

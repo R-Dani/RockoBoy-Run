@@ -2,10 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Best_Records.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Instructions.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MainWindow2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Select_Level.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Start.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="YourRecord.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

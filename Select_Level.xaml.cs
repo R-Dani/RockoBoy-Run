@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -16,23 +15,27 @@ using System.Windows.Shapes;
 namespace RockoBoy_Run
 {
     /// <summary>
-    /// Lógica de interacción para Instructions.xaml
+    /// Lógica de interacción para Select_Level.xaml
     /// </summary>
-    public partial class Instructions : Window
+    public partial class Select_Level : Window
     {
-        SoundPlayer startSound = new SoundPlayer("Assets\\Sounds\\Instructions.wav");
-        public Instructions()
+        public Select_Level()
         {
             InitializeComponent();
-            startSound.PlayLooping();
         }
 
-        private void Back_Click(object sender, RoutedEventArgs e)
+        private void btn_Normal_Click(object sender, RoutedEventArgs e)
         {
-            startSound.Stop();
-            Start start = new Start();
+            MainWindow2 mainWindow2 = new MainWindow2();
+            mainWindow2.Show();
             this.Close();
-            start.Show();
+        }
+
+        private void btn_Dificil_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

@@ -1,0 +1,40 @@
+﻿<Window x:Class="RockoBoy_Run.Best_Records"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RockoBoy_Run"
+        mc:Ignorable="d"
+        Title="RockoBoy_Run" Height="720" Width="1280" Icon="/Rocko_Icono.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas>
+        <Image Name="highScoreMenu" Source="Assets/Start/Record_Menu.png" Height="720" Width="1280" Canvas.Top="-1" Canvas.Left="-1"/>
+        <Image Name="trophy1" Source="Assets/Start/Trophy_Gold.png" Height="146" Width="127" Canvas.Left="550" Canvas.Top="80" />
+        <Image Name="trophy2" Source="Assets/Start/Trophy_Silver.png" Height="146" Width="127" Canvas.Left="300" Canvas.Top="80" />
+        <Image Name="trophy3" Source="Assets/Start/Trophy_Bronze.png" Height="146" Width="127" Canvas.Left="800" Canvas.Top="80" />
+        <Label Name="lbl_highScores" Content="High Scores" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="60" Canvas.Top="5" Canvas.Left="400" Foreground="Gold" />
+        <Label Name="lbl_rank" Content="Rank" FontWeight="Normal" FontFamily="Retro Gaming" FontSize="40" Canvas.Top="210" Canvas.Left="100" Foreground="White" />
+        <Label Name="lbl_namePlayers" Content="Name" FontWeight="Normal" FontFamily="Retro Gaming" FontSize="40" Canvas.Top="210" Canvas.Left="500" Foreground="White" />
+        <Label Name="lbl_timeRecords" Content="Time" FontWeight="Normal" FontFamily="Retro Gaming" FontSize="40" Canvas.Top="210" Canvas.Left="900" Foreground="White" />
+        <Label Name="lbl_rank1" Content="1st" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="270" Canvas.Left="100" Foreground="Gold" />
+        <Label Name="lbl_rank2" Content="2nd" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="340" Canvas.Left="100" Foreground="LightGray" />
+        <Label Name="lbl_rank3" Content="3rd" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="410" Canvas.Left="100" Foreground="Firebrick" />
+        <Label Name="lbl_rank4" Content="4th" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="480" Canvas.Left="100" Foreground="Black" />
+        <Label Name="lbl_rank5" Content="5th" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="550" Canvas.Left="100" Foreground="Black" />
+        <Label Name="lbl_player1" Content="AAAA" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="270" Canvas.Left="500" Foreground="Gold" />
+        <Label Name="lbl_player2" Content="AAAA" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="340" Canvas.Left="500" Foreground="LightGray" />
+        <Label Name="lbl_player3" Content="AAAA" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="410" Canvas.Left="500" Foreground="Firebrick" />
+        <Label Name="lbl_player4" Content="AAAA" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="480" Canvas.Left="500" Foreground="Black" />
+        <Label Name="lbl_player5" Content="AAAA" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="550" Canvas.Left="500" Foreground="Black" />
+        <Label Name="lbl_time1" Content="00:00:00" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="270" Canvas.Left="900" Foreground="Gold" />
+        <Label Name="lbl_time2" Content="00:00:00" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="340" Canvas.Left="900" Foreground="LightGray" />
+        <Label Name="lbl_time3" Content="00:00:00" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="410" Canvas.Left="900" Foreground="Firebrick" />
+        <Label Name="lbl_time4" Content="00:00:00" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="480" Canvas.Left="900" Foreground="Black" />
+        <Label Name="lbl_time5" Content="00:00:00" FontWeight="Bold" FontFamily="Retro Gaming" FontSize="35" Canvas.Top="550" Canvas.Left="900" Foreground="Black" />
+
+        <Button Name="Back" Height="36" Width="142" Canvas.Top="640" Canvas.Left="550" Click="Back_Click" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/Start/Back.png"/>
+            </Button.Background>
+        </Button>
+    </Canvas>
+</Window>

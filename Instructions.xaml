@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RockoBoy_Run"
         mc:Ignorable="d"
-        Title="RockoBoy_Run" Height="730" Width="1280" Icon="/Assets/Start/Rocko_Icono.png">
+        Title="RockoBoy_Run" Height="720" Width="1280" Icon="/Assets/Start/Rocko_Icono.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Canvas>
         <Image x:Name="instructionsScreen" Source="/Assets/Start/Instructions_Menu.png" Height="730" Width="1280" Stretch="Fill"/>
-        <Button Name="Back" Height="36" Width="142" Canvas.Top="600" Canvas.Left="600" Click="Back_Click" BorderBrush="{x:Null}">
+        <Button Name="Back" Height="36" Width="142" Canvas.Top="620" Canvas.Left="600" Click="Back_Click" BorderBrush="{x:Null}">
             <Button.Background>
-                <ImageBrush ImageSource="/Back.png"/>
+                <ImageBrush ImageSource="Assets/Start/Back.png"/>
             </Button.Background>
         </Button>
     </Canvas>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -19,13 +20,16 @@ namespace RockoBoy_Run
     /// </summary>
     public partial class Start : Window
     {
+        SoundPlayer startSound = new SoundPlayer("Assets\\Sounds\\twincraft.wav");
         public Start()
         {
             InitializeComponent();
+            startSound.PlayLooping();
         }
 
         private void HowToPlay_Click(object sender, RoutedEventArgs e)
         {
+            startSound.Stop();
             Instructions instructions = new Instructions();
             this.Close();
             instructions.Show();
@@ -33,14 +37,24 @@ namespace RockoBoy_Run
 
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
+            startSound.Stop();
             this.Close();
         }
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
+            startSound.Stop();
+            Select_Level select_Level = new Select_Level();
+            select_Level.Show();
             this.Close();
-            mainWindow.Show();
+        }
+
+        private void btn_Records_Click(object sender, RoutedEventArgs e)
+        {
+            startSound.Stop();
+            Best_Records bestRecords = new Best_Records();
+            this.Close();
+            bestRecords.Show();
         }
     }
 }

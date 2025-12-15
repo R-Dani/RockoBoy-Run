@@ -1,7 +1,10 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Media;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -9,15 +12,12 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
-
-
 namespace RockoBoy_Run
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow2 : Window
     {
         //Reloj del juego
         DispatcherTimer gameTimer = new DispatcherTimer();
@@ -25,7 +25,6 @@ namespace RockoBoy_Run
         Rect rockoHitBox;
         Rect streetHitBox;
         Rect enemy1HitBox;
-        Rect enemy2HitBox;
         Rect enemy3HitBox;
         //Funciones de rocko
         bool jumping;
@@ -38,7 +37,6 @@ namespace RockoBoy_Run
         int speed = 0;
         //Animaciones
         double spritesIndex = 0;
-        double enemySpriteIndex = 0;
         double gameSpeed = 12.0;
         //Random
         Random rnd = new Random();
@@ -49,11 +47,9 @@ namespace RockoBoy_Run
         ImageBrush city1Sprite = new ImageBrush();
         ImageBrush street1Sprite = new ImageBrush();
         ImageBrush enemy1Sprite = new ImageBrush();
-        ImageBrush enemy2Sprite = new ImageBrush();
         ImageBrush enemy3Sprite = new ImageBrush();
         //Pocisiones aleatorias del enemigo
         int[] enemy1Position = { 1600, 2000, 2400, 2800, 3200 };
-        int[] enemy2Position = { 2200, 2600, 3100, 3500 };
         int[] enemy3Position = { 3000, 3400, 3900, 4300, 4700 };
         int[] enemy3PositionUp = { 375, 300, 250, 200, 150 };
         //Sonidos
@@ -61,7 +57,7 @@ namespace RockoBoy_Run
         SoundPlayer jumpSound = new SoundPlayer("Assets\\Sounds\\Jump.wav");
         SoundPlayer slideSound = new SoundPlayer("Assets\\Sounds\\Slide.wav");
 
-        public MainWindow()
+        public MainWindow2()
         {
             InitializeComponent();
             //Detecta las teclas
@@ -145,9 +141,6 @@ namespace RockoBoy_Run
             Canvas.SetLeft(enemy1, 1600);
             Canvas.SetTop(enemy1, 383);
 
-            Canvas.SetLeft(enemy2, 2200);
-            Canvas.SetTop(enemy2, 470);
-
             Canvas.SetLeft(enemy3, 3000);
             Canvas.SetTop(enemy3, 375);
             //Animacion de rocko
@@ -155,7 +148,6 @@ namespace RockoBoy_Run
             //Sprites de enemies
             enemy1Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_1.png"));
             enemy1.Fill = enemy1Sprite;
-            Enemy_2Sprite(1);
             enemy3Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_3.png"));
             enemy3.Fill = enemy3Sprite;
             //Valores iniciales del juego
@@ -227,52 +219,7 @@ namespace RockoBoy_Run
             rocko.Fill = rockoSprite;
         }
 
-        private void Enemy_2Sprite(double j)
-        {
-            //Switch para cambiar frames de rocko para correr
-            switch (j)
-            {
-                case 1:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_1.png"));
-                    break;
-                case 2:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_2.png"));
-                    break;
-                case 3:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_3.png"));
-                    break;
-                case 4:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_4.png"));
-                    break;
-                case 5:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_5.png"));
-                    break;
-                case 6:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_6.png"));
-                    break;
-                case 7:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_7.png"));
-                    break;
-                case 8:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_8.png"));
-                    break;
-                case 9:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_9.png"));
-                    break;
-                case 10:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_10.png"));
-                    break;
-                case 11:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_11.png"));
-                    break;
-                case 12:
-                    enemy2Sprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Assets/Enemy/Enemy_2_12.png"));
-                    break;
-
-            }
-            enemy2.Fill = enemy2Sprite;
-        }
-
+       
         private void GameEngine(object sender, EventArgs e)
         {
             //Movimiento de rocko
@@ -285,15 +232,7 @@ namespace RockoBoy_Run
             Canvas.SetLeft(city2, Canvas.GetLeft(city2) - (gameSpeed - 11));
             //Movimiento de enemies
             Canvas.SetLeft(enemy1, Canvas.GetLeft(enemy1) - gameSpeed);
-            Canvas.SetLeft(enemy2, Canvas.GetLeft(enemy2) - (gameSpeed + 6));
             Canvas.SetLeft(enemy3, Canvas.GetLeft(enemy3) - (gameSpeed + 4));
-            //Sprites de enemy2
-            enemySpriteIndex += 0.5;
-            if (enemySpriteIndex > 12)
-            {
-                enemySpriteIndex = 1;
-            }
-            Enemy_2Sprite(enemySpriteIndex);
             //Tiempo record 
             TimeSpan elapsed = scoreTime.Elapsed;
             scoreText.Content = "Time: " + elapsed.ToString(@"hh\:mm\:ss");
@@ -309,7 +248,6 @@ namespace RockoBoy_Run
             //Hitboxes de colision
             streetHitBox = new Rect(Canvas.GetLeft(street3), Canvas.GetTop(street3), street3.Width, street3.Height);
             enemy1HitBox = new Rect(Canvas.GetLeft(enemy1), Canvas.GetTop(enemy1), enemy1.Width - 50, enemy1.Height);
-            enemy2HitBox = new Rect(Canvas.GetLeft(enemy2), Canvas.GetTop(enemy2), enemy2.Width - 50, enemy2.Height - 40);
             enemy3HitBox = new Rect(Canvas.GetLeft(enemy3), Canvas.GetTop(enemy3), enemy3.Width, enemy3.Height);
             //Si rocko toca street se reinicia el jumpcount
             if (rockoHitBox.IntersectsWith(streetHitBox))
@@ -336,7 +274,7 @@ namespace RockoBoy_Run
                 inStreet = true;
             }
             //Si rocko choca con el enemigo se reproduce el game over
-            if (rockoHitBox.IntersectsWith(enemy1HitBox) || rockoHitBox.IntersectsWith(enemy2HitBox) || rockoHitBox.IntersectsWith(enemy3HitBox))
+            if (rockoHitBox.IntersectsWith(enemy1HitBox) || rockoHitBox.IntersectsWith(enemy3HitBox))
             {
                 GameOver();
             }
@@ -379,12 +317,6 @@ namespace RockoBoy_Run
             {
                 Canvas.SetLeft(enemy1, enemy1Position[rnd.Next(enemy1Position.Length)]);
                 Canvas.SetTop(enemy1, 383);
-            }
-
-            if (Canvas.GetLeft(enemy2) < -200)
-            {
-                Canvas.SetLeft(enemy2, enemy2Position[rnd.Next(enemy2Position.Length)]);
-                Canvas.SetTop(enemy2, 475);
             }
 
             if (Canvas.GetLeft(enemy3) < -200)

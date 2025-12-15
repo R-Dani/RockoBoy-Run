@@ -38,6 +38,7 @@
     <None Remove="Assets\Rocko\Rocko_1.png" />
     <None Remove="Assets\Rocko\Rocko_10.png" />
     <None Remove="Assets\Rocko\Rocko_11.png" />
+    <None Remove="Assets\Rocko\Rocko_1_2.png" />
     <None Remove="Assets\Rocko\Rocko_2.png" />
     <None Remove="Assets\Rocko\Rocko_3.png" />
     <None Remove="Assets\Rocko\Rocko_4.png" />
@@ -49,145 +50,230 @@
     <None Remove="Assets\Rocko\Rocko_Jump.png" />
     <None Remove="Assets\Rocko\Rocko_Jump_2.png" />
     <None Remove="Assets\Rocko\Rocko_Slide.png" />
+    <None Remove="Assets\Sounds\Explosion.mp3" />
+    <None Remove="Assets\Sounds\Explosion.wav" />
+    <None Remove="Assets\Sounds\Instructions.mp3" />
+    <None Remove="Assets\Sounds\Instructions.wav" />
+    <None Remove="Assets\Sounds\Jump.mp3" />
+    <None Remove="Assets\Sounds\Jump.wav" />
+    <None Remove="Assets\Sounds\Slide.wav" />
+    <None Remove="Assets\Sounds\twincraft.wav" />
+    <None Remove="Assets\Start\Back.png" />
+    <None Remove="Assets\Start\Back_2.png" />
+    <None Remove="Assets\Start\Exit.png" />
+    <None Remove="Assets\Start\Exit_2.png" />
+    <None Remove="Assets\Start\HowToPlay.png" />
+    <None Remove="Assets\Start\HowToPlay_2.png" />
     <None Remove="Assets\Start\Instructions_Menu.png" />
+    <None Remove="Assets\Start\Records.png" />
+    <None Remove="Assets\Start\Records_2.png" />
+    <None Remove="Assets\Start\Record_Menu.png" />
+    <None Remove="Assets\Start\Record_Menu2.png" />
+    <None Remove="Assets\Start\Restart.png" />
+    <None Remove="Assets\Start\Restart_2.png" />
+    <None Remove="Assets\Start\Rocko_Icono.ico" />
     <None Remove="Assets\Start\Rocko_Icono.png" />
+    <None Remove="Assets\Start\Save.png" />
     <None Remove="Assets\Start\Screen_1.png" />
     <None Remove="Assets\Start\Screen_2.png" />
+    <None Remove="Assets\Start\Start.png" />
+    <None Remove="Assets\Start\Start_2.png" />
     <None Remove="Assets\Start\Start_Menu.png" />
-    <None Remove="Back.png" />
+    <None Remove="Assets\Start\Trophy_Bronze.png" />
+    <None Remove="Assets\Start\Trophy_Gold.gif" />
+    <None Remove="Assets\Start\Trophy_Gold.png" />
+    <None Remove="Assets\Start\Trophy_Silver.png" />
+    <None Remove="Assets\Start\Vídeo sin título ‐ Hecho con Microsoft Clipchamp.gif" />
     <None Remove="Exit.png" />
     <None Remove="HowToPlay.png" />
-    <None Remove="Restart.png" />
+    <None Remove="Records.png" />
     <None Remove="Rocko_Icono.png" />
     <None Remove="Screen_1.png" />
     <None Remove="Start.png" />
+    <None Remove="Start_Menu.png" />
+    <None Remove="Vídeo sin título ‐ Hecho con Microsoft Clipchamp.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\City\City_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\City\Street.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemie_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemie_2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemie_3.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_10.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_11.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_12.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_3.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_4.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_5.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_6.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_7.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_8.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_2_9.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Enemy\Enemy_3.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Death_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_10.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_11.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rocko\Rocko_1_2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_3.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_4.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_5.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_6.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_7.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_8.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_9.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_Jump.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_Jump_2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Rocko\Rocko_Slide.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Sounds\Explosion.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Sounds\Instructions.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Sounds\Jump.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Sounds\Slide.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Sounds\twincraft.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\HowToPlay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Start\Instructions_Menu.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Records.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Record_Menu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Record_Menu2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Restart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Rocko_Icono.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Start\Rocko_Icono.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Save.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Start\Screen_1.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Start\Screen_2.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Start.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Start\Start_Menu.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Back.png" />
-    <Resource Include="Exit.png" />
-    <Resource Include="HowToPlay.png" />
-    <Resource Include="Restart.png" />
+    <Resource Include="Assets\Start\Trophy_Bronze.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Trophy_Gold.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Start\Trophy_Silver.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Rocko_Icono.png" />
-    <Resource Include="Screen_1.png" />
-    <Resource Include="Start.png" />
   </ItemGroup>
 
 </Project>
